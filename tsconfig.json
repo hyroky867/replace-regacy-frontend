@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "allowJs": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "noEmit": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "./node_modules",
+    "./history"
+  ],
+  "include": [
+    "js/**/*",
+    "spec/**/*"
+  ],
+}

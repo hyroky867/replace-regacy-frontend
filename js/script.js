@@ -1,17 +1,17 @@
 function updateAll() {
-  var count = $('.todo').length;
-  var next = $('.todo input').first();
-  var nextTodoText = count ? next.val() : '(未登録)'
+  var count = $('.todo').length; // READ
+  var next = $('.todo input').first(); // READ
+  var nextTodoText = count ? next.val() : '(未登録)' // READ
 
-  $('#nextTodo').text('次のTODO: ' + nextTodoText);
-  $('#todoCount').text('(全' + count + '件)');
+  $('#nextTodo').text('次のTODO: ' + nextTodoText); // WRITE
+  $('#todoCount').text('(全' + count + '件)'); // WRITE
 
   if (count) {
-    $('#todoList').show();
-    $('#todoEmpty').hide();
+    $('#todoList').show(); // WRITE
+    $('#todoEmpty').hide(); // WRITE
   } else {
-    $('#todoList').hide();
-    $('#todoEmpty').show();
+    $('#todoList').hide(); // WRITE
+    $('#todoEmpty').show(); // WRITE
   }
 }
 
@@ -27,20 +27,20 @@ function addTodo() {
 
   wrapper.append(input);
   wrapper.append(deleteButton);
-  $('#todoList').append(wrapper);
+  $('#todoList').append(wrapper); // WRITE
 }
 
 $(function() {
-  $('#addTodo').on('click', function() {
+  $('#addTodo').on('click', function() { // EVENT
     addTodo();
     updateAll();
   });
 
-  $('#todoList').on('input', '.todo:eq(0)', function() {
+  $('#todoList').on('input', '.todo:eq(0)', function() { // EVENT
     updateAll();
   });
 
-  $('#todoList').on('click', '.delete', function() {
+  $('#todoList').on('click', '.delete', function() { // EVENT
     $(this).closest('.todo').remove();
     updateAll();
   });
