@@ -39,7 +39,8 @@
     "typescript-eslint": "^0.0.1-alpha.0"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest spec/e2e.spec.ts spec/visual.spec.ts",
+    "test:all": "jest",
     "prepare": "husky install",
     "lint": "eslint --ext .ts ./",
     "lint:fix": "eslint --fix --ext .ts ./"
