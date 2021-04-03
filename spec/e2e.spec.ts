@@ -1,6 +1,5 @@
 import path from 'path';
 import puppeteer, { Browser, Page } from 'puppeteer';
-// import expect from 'expect-puppeteer'
 
 describe('TODOアプリ', () => {
   let browser: Browser;
