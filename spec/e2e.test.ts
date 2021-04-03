@@ -21,6 +21,10 @@ describe('TODOアプリ', () => {
     });
   });
 
+  afterEach(async () => {
+    await browser.close();
+  });
+
   it('初期表示', async () => {
     await expect(page).toMatchElement('#nextTodo', {
       text: '次のTODO: (未登録)',
