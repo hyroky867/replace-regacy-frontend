@@ -1,12 +1,12 @@
 import $ from 'jquery';
 import { readData } from './reader';
-import { writeNextTodo } from './writer';
+import { writeNextTodo, writeTodoCount } from './writer';
 
 const updateAll = (): void => {
   const { count, nextTodoText } = readData();
 
   writeNextTodo(nextTodoText);
-  $('#todoCount').text(`(全${count}件)`); // WRITE
+  writeTodoCount(count);
 
   if (count) {
     $('#todoList').show(); // WRITE
