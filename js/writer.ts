@@ -25,3 +25,18 @@ export const toggleTodoEmpty = (count: number): void => {
     $todoList.show();
   }
 };
+
+export const addTodo = (): void => {
+  const $wrapper = $('<div>');
+  $wrapper.addClass('todo');
+
+  const $input = $('<input>');
+  $input.attr('type', 'text');
+
+  const $deleteButton = $('<button>');
+  $deleteButton.addClass('delete').text('削除');
+
+  $wrapper.append($input);
+  $wrapper.append($deleteButton);
+  $('#todoList').append($wrapper);
+};
