@@ -5,11 +5,10 @@ export const readData = (): {
   nextTodoText: string;
 } => {
   const count = $('.todo').length;
-  const nextValue = $('.todo input').first().val();
-  const nextValueText = typeof nextValue === undefined ? '' : (nextValue as string);
+  const $next = $('.todo input').first();
 
   return {
     count,
-    nextTodoText: count ? nextValueText : '(未登録)',
+    nextTodoText: count ? ($next.val() as string) : '(未登録)',
   };
 };
