@@ -1,10 +1,11 @@
 import $ from 'jquery';
 import { readData } from './reader';
+import { writeNextTodo } from './writer';
 
 const updateAll = (): void => {
   const { count, nextTodoText } = readData();
 
-  $('#nextTodo').text(`次のTODO: ${nextTodoText}`); // WRITE
+  writeNextTodo(nextTodoText);
   $('#todoCount').text(`(全${count}件)`); // WRITE
 
   if (count) {
