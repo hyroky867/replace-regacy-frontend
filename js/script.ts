@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 const updateAll = (): void => {
   const count = $('.todo').length; // READ
   const next = $('.todo input').first(); // READ

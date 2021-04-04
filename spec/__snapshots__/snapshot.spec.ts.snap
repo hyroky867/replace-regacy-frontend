@@ -14,7 +14,6 @@ exports[`TODOアプリ タスクの入力 1`] = `
       <span id=\\"nextTodo\\">次のTODO: サンプルタスク1</span>
       <span id=\\"todoCount\\">(全2件)</span>
     </div>
-    <script src=\\"./node_modules/jquery/dist/jquery.min.js\\"></script>
     <script src=\\"./dist/main.js\\"></script>
    
 </body></html>"
@@ -34,7 +33,6 @@ exports[`TODOアプリ タスクの削除 1`] = `
       <span id=\\"nextTodo\\">次のTODO: (未登録)</span>
       <span id=\\"todoCount\\">(全0件)</span>
     </div>
-    <script src=\\"./node_modules/jquery/dist/jquery.min.js\\"></script>
     <script src=\\"./dist/main.js\\"></script>
    
 </body></html>"
@@ -54,7 +52,6 @@ exports[`TODOアプリ タスクの追加 1`] = `
       <span id=\\"nextTodo\\">次のTODO: </span>
       <span id=\\"todoCount\\">(全2件)</span>
     </div>
-    <script src=\\"./node_modules/jquery/dist/jquery.min.js\\"></script>
     <script src=\\"./dist/main.js\\"></script>
    
 </body></html>"
@@ -68,13 +65,12 @@ exports[`TODOアプリ 初期表示 1`] = `
   </head>
   <body>
     <button id=\\"addTodo\\">タスクを追加する</button>
-    <div id=\\"todoList\\"></div>
+    <div id=\\"todoList\\" style=\\"display: none;\\"></div>
     <div id=\\"todoEmpty\\">タスクがありません</div>
     <div>
-      <span id=\\"nextTodo\\"></span>
-      <span id=\\"todoCount\\"></span>
+      <span id=\\"nextTodo\\">次のTODO: (未登録)</span>
+      <span id=\\"todoCount\\">(全0件)</span>
     </div>
-    <script src=\\"./node_modules/jquery/dist/jquery.min.js\\"></script>
     <script src=\\"./dist/main.js\\"></script>
    
 </body></html>"
