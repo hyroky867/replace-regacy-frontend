@@ -1,9 +1,8 @@
 import $ from 'jquery';
+import { readData } from './reader';
 
 const updateAll = (): void => {
-  const count = $('.todo').length; // READ
-  const next = $('.todo input').first(); // READ
-  const nextTodoText = count ? next.val() : '(未登録)'; // READ
+  const { count, nextTodoText } = readData();
 
   $('#nextTodo').text(`次のTODO: ${nextTodoText}`); // WRITE
   $('#todoCount').text(`(全${count}件)`); // WRITE
