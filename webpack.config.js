@@ -1,7 +1,7 @@
 module.exports = {
   mode: 'development',
   devtool: 'source-map',
-  entry: './js/sample.ts',
+  entry: './js/script.ts',
   resolve: {
     extensions: ['.ts', '.js'],
   },

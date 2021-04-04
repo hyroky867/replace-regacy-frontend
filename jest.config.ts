@@ -4,7 +4,8 @@ export default async (): Promise<Config.InitialOptions> => {
   return {
     preset: 'jest-puppeteer',
     transform: {
-      '^.+\\.ts$': 'ts-jest',
+      '^.+\\.tsx?$': 'ts-jest',
     },
+    moduleFileExtensions: ['ts', 'js'],
   };
 };

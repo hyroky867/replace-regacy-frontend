@@ -48,6 +48,8 @@
     "test:all": "jest",
     "prepare": "husky install",
     "lint": "eslint --ext .ts ./",
-    "lint:fix": "eslint --fix --ext .ts ./"
+    "lint:fix": "eslint --fix --ext .ts ./",
+    "build": "yarn run webpack",
+    "watch": "yarn run webpack -w"
   }
 }
