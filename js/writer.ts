@@ -26,6 +26,10 @@ export const toggleTodoEmpty = (count: number): void => {
   }
 };
 
+export const removeTodo = ($element: JQuery<HTMLElement>): void => {
+  $element.closest('.todo').remove();
+};
+
 export const addTodo = (): void => {
   const $wrapper = $('<div>');
   $wrapper.addClass('todo');
