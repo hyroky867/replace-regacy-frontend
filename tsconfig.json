@@ -9,7 +9,6 @@
     "allowJs": true,
     "sourceMap": true,
     "outDir": "./dist",
-    "noEmit": true,
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -27,5 +26,5 @@
   "include": [
     "js/**/*",
     "spec/**/*"
-  ],
+  ]
 }
