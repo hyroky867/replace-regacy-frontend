@@ -1,20 +1,14 @@
 import $ from 'jquery';
 import { readData } from './reader';
-import { writeNextTodo, writeTodoCount } from './writer';
+import { writeNextTodo, writeTodoCount, toggleTodoList, toggleTodoEmpty } from './writer';
 
 const updateAll = (): void => {
   const { count, nextTodoText } = readData();
 
   writeNextTodo(nextTodoText);
   writeTodoCount(count);
-
-  if (count) {
-    $('#todoList').show(); // WRITE
-    $('#todoEmpty').hide(); // WRITE
-  } else {
-    $('#todoList').hide(); // WRITE
-    $('#todoEmpty').show(); // WRITE
-  }
+  toggleTodoList(count);
+  toggleTodoEmpty(count);
 };
 
 const addTodo = (): void => {
