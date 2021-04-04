@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "target": "esnext",
+    "module": "esnext",
     "lib": [
       "dom",
       "esnext",
@@ -18,7 +18,8 @@
     "alwaysStrict": true,
     "moduleResolution": "node",
     "isolatedModules": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "jsx": "preserve"
   },
   "exclude": [
     "./node_modules",
