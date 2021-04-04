@@ -1,13 +1,9 @@
 import $ from 'jquery';
-
-const fullName = (firstName: string, lastName: string): string => {
-  return `${firstName}${lastName}`;
-};
+import { readName } from './readName';
+import { writeName } from './writeName';
 
 const update = (): void => {
-  const firstName: string = $('.firstName').text();
-  const lastName: string = $('.lastName').text();
-  $('.fullName').text(fullName(firstName, lastName));
+  writeName(readName());
 };
 
 $('.button').on('click', () => {
